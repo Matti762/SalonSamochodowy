@@ -10,7 +10,7 @@ namespace SalonSamochodowy
     {
         public Samochod PobierzSamochodZNajwiekszymWyposazeniem(List<Samochod> samochody)
         {
-            Samochod wynik = samochody.OrderBy(s => s.ListaWyposazenia.Count).Max();
+            Samochod wynik = samochody.OrderByDescending(s => s.ListaWyposazenia.Count).First();
            // Samochod wynik =
                //return (from Samochod s in samochody
                //          where s.ListaWyposazenia.Max()

@@ -14,6 +14,13 @@ namespace SalonSamochodowy.Tests
         public void PobierzSamochodZNajwiekszymWyposazeniemTest()
         {
             List<Samochod> auta = Dane.Dane.Samochody;
+
+            DataProcessing dp = new DataProcessing();
+
+            Samochod iloscWyposarzenia = dp.PobierzSamochodZNajwiekszymWyposazeniem(auta);
+            Assert.AreEqual(6, iloscWyposarzenia.ListaWyposazenia.Count);
+
+
         }
     }
 }
