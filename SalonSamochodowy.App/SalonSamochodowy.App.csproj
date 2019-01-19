@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SalonSamochodowy.Dane\SalonSamochodowy.Dane.csproj">
+      <Project>{4d1c7574-c221-4ffb-9e99-af28dc5bf2bd}</Project>
+      <Name>SalonSamochodowy.Dane</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SalonSamochodowy\SalonSamochodowy.Lib.csproj">
+      <Project>{c3e85ac5-13df-43dc-b503-1bef6d71dc10}</Project>
+      <Name>SalonSamochodowy.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

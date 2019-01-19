@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SalonSamochodowy.Dane;
 
 namespace SalonSamochodowy.App
 {
@@ -10,6 +11,9 @@ namespace SalonSamochodowy.App
     {
         public static void Main(string[] args)
         {
+            //DataProcessing dp = new DataProcessing();
+
+            //Console.WriteLine($"Wynik pierwszej metody: {dp.PobierzSamochodZNajwiekszymWyposazeniem(Dane.Dane.Samochody)}");
         }
     }
 }
